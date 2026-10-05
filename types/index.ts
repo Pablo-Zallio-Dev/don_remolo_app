@@ -8,8 +8,8 @@ export interface Category {
 export interface Product{
       id: number,
       name: string,
-      description?: string,
       price: number,
+      description?: string,
       image_url: string | null,
       is_available: boolean,
       category_id: number,

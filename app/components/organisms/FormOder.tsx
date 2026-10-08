@@ -26,7 +26,7 @@ export default function FormOder() {
       }
 
       return (
-            <form onSubmit={handleSubmit(onSubmit)} className=" flex flex-col gap-3 ">
+            <form onSubmit={handleSubmit(onSubmit)} className=" flex flex-col gap-8 ">
                   <div className=" relative flex flex-col gap-1 ">
                         <label htmlFor="nombres" className=" text-sm font-medium ">Nombre y Apellido</label>
                         <input id='nombres' type="text" className=" py-1 px-3 border border-border rounded-lg shadow-md focus:outline-1  focus:outline-primary "
@@ -36,7 +36,7 @@ export default function FormOder() {
                               })
                               } />
                         {
-                              errors.nombres?.message && (<p className=" absolute -bottom-6 right-0 z-200 text-sm text-primary font-medium ">{String(errors.nombres.message)}</p>)
+                              errors.nombres?.message && (<p className=" absolute -bottom-6 right-0 z-200 text-xs text-primary font-medium ">{String(errors.nombres.message)}</p>)
                         }
                   </div>
                   <div className=" relative flex flex-col gap-1 ">
@@ -48,7 +48,7 @@ export default function FormOder() {
                               })
                               } />
                         {
-                              errors.direccion?.message && (<p className=" absolute -bottom-6 right-0 z-200 text-sm text-primary font-medium ">{String(errors.direccion.message)}</p>)
+                              errors.direccion?.message && (<p className=" absolute -bottom-6 right-0 z-200 text-xs text-primary font-medium ">{String(errors.direccion.message)}</p>)
                         }
                   </div>
                   <div className=" flex flex-col gap-1 ">
